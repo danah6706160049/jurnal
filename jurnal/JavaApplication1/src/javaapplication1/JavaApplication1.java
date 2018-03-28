@@ -15,20 +15,16 @@ public class JavaApplication1 {
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-        int a = 0;
+        int input;
         int b = 1;
-        int hasil = 0;
+        
         
         System.out.print("Input : ");
-        int input = scn.nextInt();
-        
-        for (int i = 1; i <= input; i++) {
-            a = b;
-            b = hasil;
-            System.out.print(hasil+" ");
-            hasil = a + b;
-        }
-        
+        input = scn.nextInt();
+        b     = input - b;
+        input = input + b;
+        System.out.print(input+" ");
+ 
     }
     
 }
